@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+<!-- 
+    Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+    <style>
+        .card-section {
+            position: relative;
+            top: -150px;
+        }
+
+        .project-content {
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        .project-content::before {
+            content: "";
+            position: absolute;
+            bottom: -100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: darkblue;
+            transition: bottom 0.4s ease-in;
+            z-index: 0;
+        }
+
+.image-transaction img{
+    overflow: hidden;
+}
+        .image-transaction img:hover {
+    transform: scale(1.03);
+    transition: 0.4s ease-in;
+    background-color: blue;
+}
+
+
+    .project-content:hover .project-content-inner h3,
+    .project-content:hover .project-content-inner .project-icon i,
+    .project-content:hover .project-content-inner h5{
+        color:var(--bs-white) !important;
+        transition: 0.2s;
+    }
+
+    .project-content .project-read a:hover {
+        background-color: white !important;
+        color: black !important;
+
+    }
+
+    .project-content .project-content-inner .project-section-text:hover{
+        color:var(--bs-primary) !important;
+        transition: 0.2s;
+    }
+
+        .project-icon {
+        z-index: 2;
+      }
+
+        .project-content:hover::before {
+            bottom: 0px;
+        }
+
+        .project-content .project-content-inner {
+            position: relative;
+            z-index: 1;
+            color: black;
+            transition: color 0.3s ease-in;
+        }
+
+        .project-content:hover .project-content-inner {
+            color: white;
+        }
+
+        .project-read{
+            z-index: 2;
+        }
+
+        .project-carousel .owl-carousel{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    
+<div class="container mt-5">
+     <div class="row">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                <div class="col-md-6 project-item d-flex flex-column align-items-stretch wow fadeInUp" data-wow-delay="0.1s" style="max-width:800px;">
+                    <div class="image-transaction">
+                        <img src="./img/dd2.jpg" class="img-fluid w-100 rounded-3 custom-height"/>
+                    </div>
+                    <div class="card card-section project-content w-75 mx-auto h-100">
+                        <i class="card-img-top project-icon bi bi-cloud-check ms-3 mt-3 fa-5x text-primary"></i>
+                        <div class="card-body project-content-inner">
+                            <h3 class="card-title text-dark"><strong>Services & Software Solutions</strong></h3>
+                            <h5 class="card-text text-dark mt-3">Microsoft Cloud Migration For A Financial Institution</h5>
+                        </div>
+                        <p class="mt-auto project-read mb-2 text-center"><a href="#" class="btn btn-primary px-3 py-2 rounded-3">Read More</a></p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 project-item d-flex flex-column align-items-stretch wow fadeInUp" data-wow-delay="0.1s" style="max-width:800px;">
+                    <div class="image-transaction">
+                        <img src="./img/dd2.jpg" class="img-fluid w-100 rounded-3 custom-height" />
+                    </div>
+                    <div class="card card-section project-content w-75 mx-auto h-100">
+                        <i class="card-img-top project-icon bi bi-cloud-check ms-3 mt-3 fa-5x text-primary"></i>
+                        <div class="card-body project-content-inner">
+                            <h3 class="card-title text-dark"><strong>Services & Software Solutions</strong></h3>
+                            <h5 class="card-text text-dark mt-3">Microsoft Cloud Migration For A Financial Institution</h5>
+                        </div>
+                        <p class="mt-auto project-read mb-2 text-center"><a href="#" class="btn btn-primary px-3 py-2 rounded-3">Read More</a></p>
+                    </div>
+                </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-6 project-item d-flex flex-column align-items-stretch wow fadeInUp" data-wow-delay="0.1s" style="max-width:800px;">
+                        <div class="image-transaction">
+                            <img src="./img/dd2.jpg" class="img-fluid w-100 rounded-3 custom-height"/>
+                        </div>
+                        <div class="card card-section project-content w-75 mx-auto h-100">
+                            <i class="card-img-top project-icon bi bi-cloud-check ms-3 mt-3 fa-5x text-primary"></i>
+                            <div class="card-body project-content-inner">
+                                <h3 class="card-title text-dark"><strong>Services & Software Solutions</strong></h3>
+                                <h5 class="card-text text-dark mt-3">Microsoft Cloud Migration For A Financial Institution</h5>
+                            </div>
+                            <p class="mt-auto project-read mb-2 text-center"><a href="#" class="btn btn-primary px-3 py-2 rounded-3">Read More</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 project-item d-flex flex-column align-items-stretch wow fadeInUp" data-wow-delay="0.1s" style="max-width:800px;">
+                        <div class="image-transaction">
+                            <img src="./img/dd2.jpg" class="img-fluid w-100 rounded-3 custom-height" />
+                        </div>
+                        <div class="card card-section project-content w-75 mx-auto h-100">
+                            <i class="card-img-top project-icon bi bi-cloud-check ms-3 mt-3 fa-5x text-primary"></i>
+                            <div class="card-body project-content-inner">
+                                <h3 class="card-title text-dark"><strong>Services & Software Solutions</strong></h3>
+                                <h5 class="card-text text-dark mt-3">Microsoft Cloud Migration For A Financial Institution</h5>
+                            </div>
+                            <p class="mt-auto project-read mb-2 text-center"><a href="#" class="btn btn-primary px-3 py-2 rounded-3">Read More</a></p>
+                        </div>
+                    </div>
+                    </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-6 project-item d-flex flex-column align-items-stretch wow fadeInUp" data-wow-delay="0.1s" style="max-width:800px;">
+                        <div class="image-transaction">
+                            <img src="./img/dd2.jpg" class="img-fluid w-100 rounded-3 custom-height"/>
+                        </div>
+                        <div class="card card-section project-content w-75 mx-auto h-100">
+                            <i class="card-img-top project-icon bi bi-cloud-check ms-3 mt-3 fa-5x text-primary"></i>
+                            <div class="card-body project-content-inner">
+                                <h3 class="card-title text-dark"><strong>Services & Software Solutions</strong></h3>
+                                <h5 class="card-text text-dark mt-3">Microsoft Cloud Migration For A Financial Institution</h5>
+                            </div>
+                            <p class="mt-auto project-read mb-2 text-center"><a href="#" class="btn btn-primary px-3 py-2 rounded-3">Read More</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 project-item d-flex flex-column align-items-stretch wow fadeInUp" data-wow-delay="0.1s" style="max-width:800px;">
+                        <div class="image-transaction">
+                            <img src="./img/dd2.jpg" class="img-fluid w-100 rounded-3 custom-height" />
+                        </div>
+                        <div class="card card-section project-content w-75 mx-auto h-100">
+                            <i class="card-img-top project-icon bi bi-cloud-check ms-3 mt-3 fa-5x text-primary"></i>
+                            <div class="card-body project-content-inner">
+                                <h3 class="card-title text-dark"><strong>Services & Software Solutions</strong></h3>
+                                <h5 class="card-text text-dark mt-3">Microsoft Cloud Migration For A Financial Institution</h5>
+                            </div>
+                            <p class="mt-auto project-read mb-2 text-center"><a href="#" class="btn btn-primary px-3 py-2 rounded-3">Read More</a></p>
+                        </div>
+                    </div>
+                    </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-6 project-item d-flex flex-column align-items-stretch wow fadeInUp" data-wow-delay="0.1s" style="max-width:800px;">
+                        <div class="image-transaction">
+                            <img src="./img/dd2.jpg" class="img-fluid w-100 rounded-3 custom-height"/>
+                        </div>
+                        <div class="card card-section project-content w-75 mx-auto h-100">
+                            <i class="card-img-top project-icon bi bi-cloud-check ms-3 mt-3 fa-5x text-primary"></i>
+                            <div class="card-body project-content-inner">
+                                <h3 class="card-title text-dark"><strong>Services & Software Solutions</strong></h3>
+                                <h5 class="card-text text-dark mt-3">Microsoft Cloud Migration For A Financial Institution</h5>
+                            </div>
+                            <p class="mt-auto project-read mb-2 text-center"><a href="#" class="btn btn-primary px-3 py-2 rounded-3">Read More</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 project-item d-flex flex-column align-items-stretch wow fadeInUp" data-wow-delay="0.1s" style="max-width:800px;">
+                        <div class="image-transaction">
+                            <img src="./img/dd2.jpg" class="img-fluid w-100 rounded-3 custom-height" />
+                        </div>
+                        <div class="card card-section project-content w-75 mx-auto h-100">
+                            <i class="card-img-top project-icon bi bi-cloud-check ms-3 mt-3 fa-5x text-primary"></i>
+                            <div class="card-body project-content-inner">
+                                <h3 class="card-title text-dark"><strong>Services & Software Solutions</strong></h3>
+                                <h5 class="card-text text-dark mt-3">Microsoft Cloud Migration For A Financial Institution</h5>
+                            </div>
+                            <p class="mt-auto project-read mb-2 text-center"><a href="#" class="btn btn-primary px-3 py-2 rounded-3">Read More</a></p>
+                        </div>
+                    </div>
+                    </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-6 project-item d-flex flex-column align-items-stretch wow fadeInUp" data-wow-delay="0.1s" style="max-width:800px;">
+                        <div class="image-transaction">
+                            <img src="./img/dd2.jpg" class="img-fluid w-100 rounded-3 custom-height"/>
+                        </div>
+                        <div class="card card-section project-content w-75 mx-auto h-100">
+                            <i class="card-img-top project-icon bi bi-cloud-check ms-3 mt-3 fa-5x text-primary"></i>
+                            <div class="card-body project-content-inner">
+                                <h3 class="card-title text-dark"><strong>Services & Software Solutions</strong></h3>
+                                <h5 class="card-text text-dark mt-3">Microsoft Cloud Migration For A Financial Institution</h5>
+                            </div>
+                            <p class="mt-auto project-read mb-2 text-center"><a href="#" class="btn btn-primary px-3 py-2 rounded-3">Read More</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 project-item d-flex flex-column align-items-stretch wow fadeInUp" data-wow-delay="0.1s" style="max-width:800px;">
+                        <div class="image-transaction">
+                            <img src="./img/dd2.jpg" class="img-fluid w-100 rounded-3 custom-height" />
+                        </div>
+                        <div class="card card-section project-content w-75 mx-auto h-100">
+                            <i class="card-img-top project-icon bi bi-cloud-check ms-3 mt-3 fa-5x text-primary"></i>
+                            <div class="card-body project-content-inner">
+                                <h3 class="card-title text-dark"><strong>Services & Software Solutions</strong></h3>
+                                <h5 class="card-text text-dark mt-3">Microsoft Cloud Migration For A Financial Institution</h5>
+                            </div>
+                            <p class="mt-auto project-read mb-2 text-center"><a href="#" class="btn btn-primary px-3 py-2 rounded-3">Read More</a></p>
+                        </div>
+                    </div>
+                    </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next text-dark" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+     </div>
+</div>
+   
+
+    <!-- CTA section start -->
+    <div class="container-fluid mb-5">
+        <div class="row mx-3" style="background-color: #87d4db;">
+            <div class="col-md-6 col-12 d-flex flex-column justify-content-center align-items-center">
+                <div class="text-center mt-5">
+                    <h3 class="text-center ms-5 text-dark fw-bold">
+                        <strong>Leverage our expertise to navigate complex IT landscapes and overcome technical hurdles.</strong>
+                    </h3>
+                </div>
+                <div class="text-center mb-5 mt-4">
+                    <a href="contact.html" class="btn btn-outline-dark py-3 px-5 rounded-pill text-dark">
+                        <b class="fs-5">Contact Us</b>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 col-12 mt-1 d-flex justify-content-center align-items-center">
+                <img src="./img/contact.png" class="img-fluid" alt="Contact Us">
+            </div>
+        </div>
+    </div>
+    <!-- CTA section end -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

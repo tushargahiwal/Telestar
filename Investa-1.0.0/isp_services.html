@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+        <title>Investa - Investment Website Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+        <!-- Libraries Stylesheet -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+      />
+  
+      <style>
+        a {
+          text-decoration: none;
+        }
+  
+        .floating_btn {
+          position: fixed;
+          bottom: 150px;
+          right: 10px;
+          width: 100px;
+          height: 100px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          z-index: 1000;
+        }
+  
+        @keyframes pulsing {
+          to {
+            box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
+          }
+        }
+  
+        .contact_icon {
+          background-color: #42db87;
+          color: #fff;
+          width: 60px;
+          height: 60px;
+          font-size: 30px;
+          border-radius: 50%;
+          text-align: center;
+          box-shadow: 2px 2px 3px #999;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          animation: pulse 1.5s infinite;
+          box-shadow: 0 0 0 0 #42db87;
+          -webkit-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+          -moz-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+          -ms-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+          animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+          font-weight: normal;
+          font-family: sans-serif;
+          text-decoration: none !important;
+          transition: all 300ms ease-in-out;
+          margin-bottom: 1px; /* Added gap between buttons */
+        }
+  
+        .floating-phone {
+          position: fixed;
+          bottom: 100px; /* Increased distance from bottom */
+          z-index: 1000;
+          background-color: #44d2f6;
+          color: white;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 30px;
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+          transition: transform 0.3s ease;
+        }
+  
+        /* Hover effect */
+        .floating-phone:hover {
+          transform: scale(1.1);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+        }
+      </style>
+</head>
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid topbar px-0 d-none d-lg-block">
+      <div class="container px-0">
+        <div class="row gx-0 align-items-center" style="height: 45px">
+          <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+            <div class="d-flex flex-wrap">
+              <a
+                href="https://maps.app.goo.gl/pXu9KfBhxKKtSG6eA"
+                target="_blank"
+                class="text-muted me-4"
+                ><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A
+                Location</a
+              >
+              <a href="tel:+91 9922555920" class="text-muted me-4"
+                ><i class="fas fa-phone-alt text-primary me-2"></i
+                >+919922555920</a
+              >
+              <a href="mailto:ceo@creatorscom.in" class="text-muted me-0"
+                ><i class="fas fa-envelope text-primary me-2"></i
+                >ceo@creatorscom.in</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 text-center text-lg-end">
+            <div class="d-flex align-items-center justify-content-end">
+              <a
+                href="#"
+                class="btn btn-primary btn-square rounded-circle nav-fill me-3"
+                ><i class="fab fa-facebook-f text-white"></i
+              ></a>
+              <a
+                href="#"
+                class="btn btn-primary btn-square rounded-circle nav-fill me-3"
+                ><i class="fab fa-twitter text-white"></i
+              ></a>
+              <a
+                href="#"
+                class="btn btn-primary btn-square rounded-circle nav-fill me-3"
+                ><i class="fab fa-instagram text-white"></i
+              ></a>
+              <a
+                href="#"
+                class="btn btn-primary btn-square rounded-circle nav-fill me-0"
+                ><i class="fab fa-linkedin-in text-white"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Topbar End -->
+
+
+   <!-- Navbar & Hero Start -->
+ <div class="container-fluid sticky-top px-0">
+  <div
+    class="position-absolute bg-dark"
+    style="left: 0; top: 0; width: 100%; height: 100%"
+  ></div>
+  <div class="container px-0">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-white py-3 px-4">
+      <a href="index.html" class="navbar-brand p-0">
+        <h1 class="text-primary m-0">
+          <i class="fa fa-star me-3"></i>TellStar
+        </h1>
+        <!-- <img src="img/logo.png" alt="Logo"> -->
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+      <span class="fa fa-bars text-dark"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto py-0">
+          <a href="index.html" class="nav-item nav-link">Home</a>
+          <a href="about.html" class="nav-item nav-link">About</a>
+          <div class="nav-item dropdown">
+            <a href="service.html" class="nav-link dropdown-toggle active">Services</a>
+            <div class="dropdown-menu m-0 p-4" style="min-width: 580px; max-width: 750px;">
+              <div class="row">
+                <!-- Column 1 -->
+                <div class="col-md-4 col-xs-12">
+                  <p class="text-dark"><b>Cloud Services &<br> Software Solutions</b></p>
+                  <ol>
+                    <li><a href="products.html" class="text-dark">Products of Microsoft and its services</a></li>
+                    <li><a href="aws.html" class="text-dark">AWS sales support services</a></li>
+                    <li><a href="software_lic.html" class="text-dark">Software licensing</a></li>
+                  </ol>
+                </div>
+                <!-- Column 2 -->
+                <div class="col-md-4 col-xs-12 ">
+                  <p class="text-dark"><b>Network & Security</b></p>
+                  <ol>
+                    <li><a href="networking.html" class="text-dark">Networking: LAN, support, and maintenance</a></li>
+                    <li><a href="data_loss.html" class="text-dark">DLP services</a></li>
+                  </ol>
+                  <p class="text-dark"><b>IT Infrastructure</b></p>
+                  <ol>
+                    <li><a href="it_hardware.html" class="text-dark">IT hardware</a></li>
+                    <li><a href="isp_services.html" class="text-dark">ISP services</a></li>
+                  </ol>
+                </div>
+                <!-- Column 3 -->
+                <div class="col-md-4 col-xs-12">
+                  <p class="text-dark"><b>Automation</b></p>
+                  <ol>
+                    <li><a href="automation.html" class="text-dark">Automation: sales and services</a></li>
+                  </ol>
+                  <p class="text-dark"><b>Digital Services</b></p>
+                  <ol>
+                    <li><a href="digital_marketing.html" class="text-dark">Digital marketing and SEO</a></li>
+                    <li><a href="docunent_digitalization.html" class="text-dark">Document digitization</a></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <a href="project.html" class="nav-item nav-link">Projects</a>
+          <div class="nav-item dropdown">
+            <a
+              href="#"
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              >Pages</a
+            >
+            <div class="dropdown-menu m-0">
+              <a href="blog.html" class="dropdown-item">Our Blog</a>
+              <a href="team.html" class="dropdown-item">Our Team</a>
+              <a href="testimonial.html" class="dropdown-item"
+                >Testimonial</a
+              >
+              <a href="faqs.html" class="dropdown-item">FAQs</a>
+              <a href="404.html" class="dropdown-item">404 Page</a>
+            </div>
+          </div>
+          <a href="contact.html" class="nav-item nav-link">Contact</a>
+        </div>
+        <div class="d-flex align-items-center flex-nowrap pt-xl-0">
+          <button
+            class="btn btn-primary btn-md-square mx-2"
+            data-bs-toggle="modal"
+            data-bs-target="#searchModal"
+          >
+            <i class="fas fa-search"></i>
+          </button>
+          <a
+            href="#"
+            class="btn btn-primary rounded-pill text-white py-2 px-4 ms-2 flex-wrap flex-sm-shrink-0"
+            >Start TellStar</a
+          >
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+<!-- Navbar & Hero End -->
+  <!-- Modal Search Start -->
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content rounded-0">
+            <div class="modal-header">
+                <h4 class="modal-title mb-0" id="exampleModalLabel">Search by keyword</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex align-items-center">
+                <div class="input-group w-75 mx-auto d-flex">
+                    <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                    <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Search End -->
+
+<!-- Header Start -->
+<div class="container-fluid bg-breadcrumb">
+  <div class="bg-breadcrumb-single"></div>
+  <div
+    class="container text-center py-5"
+    style="max-width: 900px; max-height: 2000px"
+  >
+    <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">
+    ISP Services
+    </h4>
+    <ol
+      class="breadcrumb justify-content-center mb-0 wow fadeInDown"
+      data-wow-delay="0.3s"
+    >
+      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item"><a href="#">Services</a></li>
+      <li class="breadcrumb-item active text-primary">IT Infrastructure</li>
+    </ol>
+  </div>
+</div>
+<!-- Header End -->
+
+
+<!-- Content start -->
+<div class="container mt-5">
+    <div class="row mt-3">
+         <h3 class="text-center choose">ISP Services</h3>
+
+         <div class="col-12 mt-3 mx-md-4">
+            <p class="text ps-4 mb-4 fs-5 text-center text-dark">A fast, reliable, and secure internet connection is crucial for any business in today’s digital 
+                landscape. We provide comprehensive ISP (Internet Service Provider) services, ensuring that your business stays connected 24/7 with
+                 uninterrupted, high-speed internet tailored to your operational needs. Our ISP services come with proactive monitoring, enterprise-grade
+                  security, and flexible bandwidth options to support everything from basic office tasks to data-intensive operations like video 
+                  conferencing, cloud computing, and large data transfers.
+
+            </p>
+         </div>
+    </div>
+</div>
+
+<!-- content End -->
+
+<!-- key offering section start -->
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-xs-12 col-md-12 col-lg-6 d-flex justify-content-center infrastructure wow fadeInLeft" data-wow-deliy="0.6s">
+        <img 
+          class="img-fluid  w-70 "
+          src="./img/isp2.jpg"
+          height="380px"
+          alt="handshake"
+          style="border-radius: 10px"
+        />
+      </div>
+      <div class="col-xs-12 col-md-12 col-lg-6 wow fadeInRight" date-wow-deliy="0.6s">
+        <h3 class="text-center key">Key Offerings</h3> 
+        <div class="text-dark">
+            <ul class="text-start list-unstyled">
+              <li class="mt-3">
+                <i class="bi bi-check-circle-fill text-primary "></i> <b>High-Speed Internet Connectivity:</b>
+                We offer a range of high-speed internet plans designed to meet the specific needs
+                     of your business,
+                <span class=" moreText d-none">
+                  from small teams to large enterprises. Our solutions ensure consistent and reliable connectivity with options for
+                      both fiber optic and broadband internet services.
+                </span>
+                <span class="dots">...</span>
+                <a href="javascript:void(0)" class="readMoreBtn" onclick="toggleText(this)"><i class="fas fa-chevron-down"></i></a>
+              </li>
+              <li class="mt-3">
+                <i class="bi bi-check-circle-fill text-primary "></i> <b>Customized Bandwidth Solutions:</b>
+                Whether you need a standard internet connection for daily office work or require 
+                    large bandwidth for streaming,
+                <span class=" moreText d-none">
+                  data transfer, or running cloud applications, we provide custom bandwidth packages that are
+                    optimized for your operations. Our solutions are flexible, allowing for easy upgrades as your business grows.Dedicated Internet Access (DIA)
+                </span>
+                <span class="dots">...</span>
+                <a href="javascript:void(0)" class="readMoreBtn " onclick="toggleText(this)"><i class="fas fa-chevron-down"></i></a>
+              </li>
+              <li class="mt-2">
+                <i class="bi bi-check-circle-fill text-primary "></i> <b>Dedicated Internet Access (DIA):</b>
+                For businesses that need guaranteed performance, we provide Dedicated Internet 
+                    Access (DIA) services.
+                <span class=" moreText d-none">
+                  This ensures a private, non-shared internet connection with symmetrical upload and download speeds, giving 
+                    you consistent performance even during peak times. Ideal for businesses handling sensitive data or mission-critical applications.
+                </span>
+                <span class="dots">...</span>
+                <a href="javascript:void(0)" class="readMoreBtn " onclick="toggleText(this)"><i class="fas fa-chevron-down"></i></a>
+              </li>
+              <li class="mt-2">
+                <i class="bi bi-check-circle-fill text-primary "></i> <b>Redundancy and Failover Solutions:</b>
+                To ensure uninterrupted operations, we offer redundancy and failover solutions 
+                    that automatically
+                <span class=" moreText d-none">
+                  switch to a backup connection in case of primary internet failure. This ensures that your business remains online, 
+                    even in the event of outages or disruptions.
+                </span>
+                <span class="dots">...</span>
+                <a href="javascript:void(0)" class="readMoreBtn " onclick="toggleText(this)"><i class="fas fa-chevron-down"></i></a>
+              </li>
+              <li class="mt-2">
+                <i class="bi bi-check-circle-fill text-primary "></i> <b>24/7 Monitoring and Support:</b>
+                We continuously monitor your internet connection to detect any issues before they 
+                    affect your business.
+                <span class=" moreText d-none">
+                  Our team of experts is available 24/7 to provide technical support, ensuring that any connectivity issues are 
+                    resolved promptly and minimizing downtime.
+                </span>
+                <span class="dots">...</span>
+                <a href="javascript:void(0)" class="readMoreBtn " onclick="toggleText(this)"><i class="fas fa-chevron-down"></i></a>
+              </li>
+              <li class="mt-2">
+                <i class="bi bi-check-circle-fill text-primary "></i> <b>Network Security and Firewall Solutions:</b>
+                Our ISP services come with built-in enterprise-grade security, including 
+                    firewalls, intrusion detection,
+                <span class=" moreText d-none">
+                  and protection against DDoS attacks. We help secure your network and prevent unauthorized access to
+                     your internet infrastructure.
+                </span>
+                <span class="dots">...</span>
+                <a href="javascript:void(0)" class="readMoreBtn " onclick="toggleText(this)"><i class="fas fa-chevron-down"></i></a>
+              </li>
+              <li class="mt-2">
+                <i class="bi bi-check-circle-fill text-primary "></i> <b>Managed Services:</b>
+                Our managed ISP services take the hassle out of maintaining your internet connectivity. 
+                We manage everything 
+                <span class=" moreText d-none">
+                  from initial setup to ongoing monitoring, troubleshooting, and performance optimization, allowing your business 
+                    to focus on its core operations without worrying about connectivity issues.
+                </span>
+                <span class="dots">...</span>
+                <a href="javascript:void(0)" class="readMoreBtn " onclick="toggleText(this)"><i class="fas fa-chevron-down"></i></a>
+              </li>
+             </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- key offering section end -->
+
+
+<!-- Why choose us section start -->
+<div class="container mt-5 mb-5">
+<div class="row wow fadeInUp" data-wow-delay="0.5s">
+    <div class="text-dark mt-4">
+        <h3 class="text-center choose">Why choose us</h3>
+        <div class="row text-start">
+    <div class="col-md-6 col-xs-12 mt-3">
+        <li class="mb-3"><b>High-Speed, Reliable Internet</b>:Enjoy fast and consistent connectivity with options tailored to your business size and operations.</li>
+        <li class="mb-3"><b>24/7 Proactive Monitoring</b>:Our team ensures your internet stays online with minimal downtime and fast support.</li>
+    </div>
+    <div class="col-md-6 col-xs-12 mt-3">
+        <li class="mb-3"><b>Custom Bandwidth Packages</b>:Scalable bandwidth options to fit your needs, with easy upgrades available as your business grows.</li>
+        <li class="mb-3"><b>Redundancy and Security</b>:Ensure business continuity with backup connections and enterprise-grade security solutions.</li> 
+
+    </div>
+    <div class="col-6">
+        <li class="mb-3"><b>Full-Service ISP</b>:From installation to ongoing support, we manage every aspect of your internet service,
+             allowing you to focus on your business.</li> 
+    </div>
+</div>
+</div>
+</div>
+</div>
+<!-- why choose us section end -->
+
+<!-- CTA section start -->
+<div class="container-fluid mb-4 ">
+  <div class="row mx-3 wow fadeInUp" data-wow-delay="0.5s" style="background-color: #87d4db;">
+      <div class="col-md-6 col-12 d-flex flex-column justify-content-center align-items-center">
+          <div class="text-center mt-5">
+              <h3 class="text-center ms-5 text-dark fw-bold">
+                  <strong> Leverage our expertise to navigate complex IT landscapes and overcome technical hurdles.</strong>
+              </h3>
+          </div>
+          <div class="text-center mb-5 mt-4">
+              <button class="py-3 px-5 border border-1 rounded-pill bg-white">
+                  <a href="contact.html" class="text-dark text-decoration-none">
+                      <b class="fs-5">Contact Us</b>
+                  </a>
+              </button>
+          </div>
+      </div>
+      <div class="col-md-6 col-12 mt-1  d-flex justify-content-center align-items-center">
+          <img src="./img/contact.png" style="width: 300px; height: 200px;" alt="Contact Us">
+      </div>
+  </div>
+</div> 
+<!-- Cta section end -->
+
+ <!-- Footer Start -->
+ <div class="container-fluid footer py-1 wow fadeIn" data-wow-delay="0.2s">
+  <div class="container py-5">
+    <div class="row g-5">
+      <div class="col-md-6 col-lg-6 col-xl-3">
+        <div class="footer-item d-flex flex-column">
+          <div class="footer-item">
+            <h4 class="text-white mb-4">About</h4>
+            <p class="mb-3">
+              At TellStar, we are dedicated to transforming businesses with
+              innovative IT services and solutions.
+            </p>
+            <div class="position-relative mx-auto rounded-pill">
+              <input
+                class="form-control rounded-pill w-100 py-3 ps-4 pe-5"
+                type="text"
+                placeholder="Enter your email"
+              />
+              <button
+                type="button"
+                class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2"
+              >
+                SignUp
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6 col-xl-3">
+        <div class="footer-item d-flex flex-column">
+          <h4 class="text-white mb-4">Explore</h4>
+          <a href="index.html"
+            ><i class="fas fa-angle-right me-2"></i> Home</a
+          >
+          <a href="about.html"
+            ><i class="fas fa-angle-right me-2"></i> About Us</a
+          >
+          <a href="service.html"
+            ><i class="fas fa-angle-right me-2"></i> Services</a
+          >
+          <a href="project.html"
+            ><i class="fas fa-angle-right me-2"></i> Projects</a
+          >
+          <a href="testimonial.html"
+            ><i class="fas fa-angle-right me-2"></i> Testimonial</a
+          >
+          <a href="team.html"
+            ><i class="fas fa-angle-right me-2"></i> Our Team</a
+          >
+          <a href="contact.html"
+            ><i class="fas fa-angle-right me-2"></i> Contact Us</a
+          >
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6 col-xl-3">
+        <div class="footer-item d-flex flex-column">
+          <h4 class="text-white mb-4">Contact Info</h4>
+          <a
+            href="https://maps.app.goo.gl/pXu9KfBhxKKtSG6eA"
+            target="_blank"
+            ><i class="fas fa-map-marker-alt me-2"></i> TellStar , Nashik</a
+          >
+          <a href="mailto:ceo@creatorscom.in"
+            ><i class="fas fa-envelope me-2"></i> ceo@creatorscom.in</a
+          >
+          <a href="mailto:ceo@creatorscom.in"
+            ><i class="fas fa-envelope me-2"></i> ceo@creatorscom.in</a
+          >
+          <a href="tel:+91 9922555920"
+            ><i class="fas fa-phone me-2"></i> +91 9922555920</a
+          >
+          <a href="tel:+91 9922555920" class="mb-3"
+            ><i class="fas fa-print me-2"></i> +91 7030671671</a
+          >
+          <div class="d-flex align-items-center">
+            <a class="btn btn-light btn-md-square me-2" href=""
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a class="btn btn-light btn-md-square me-2" href=""
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a class="btn btn-light btn-md-square me-2" href=""
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a class="btn btn-light btn-md-square me-0" href=""
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6 col-xl-3">
+        <div class="footer-item-post d-flex flex-column">
+          <h4 class="text-white mb-4">Popular Post</h4>
+          <div class="d-flex flex-column mb-3">
+            <p class="text-uppercase text-primary mb-2">Investment</p>
+            <a href="#" class="text-body"
+              >Revisiting Your Investment & Distribution Goals</a
+            >
+          </div>
+          <div class="d-flex flex-column mb-3">
+            <p class="text-uppercase text-primary mb-2">Business</p>
+            <a href="#" class="text-body"
+              >Dimensional Fund Advisors Interview with Director</a
+            >
+          </div>
+          <div class="footer-btn text-start">
+            <a href="#" class="btn btn-light rounded-pill px-4"
+              >View All Post <i class="fa fa-arrow-right ms-1"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Footer End -->
+
+<!-- Copyright Start -->
+<div class="container-fluid copyright py-4">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-md-6 text-center text-md-start mb-md-0">
+        <span class="text-body"
+          ><a href="#" class="border-bottom text-primary"
+            ><i class="fas fa-copyright text-light me-2"></i>TellStar
+            </a
+          >, All right reserved.</span
+        >
+      </div>
+      <div class="col-md-6 text-center text-md-end text-body">
+        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+        Designed By
+        <a class="border-bottom text-primary" href="https://htmlcodex.com"
+          >HTML Codex</a
+        >
+        Distributed By
+        <a class="border-bottom text-primary" href="https://themewagon.com"
+          >ThemeWagon</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Copyright End -->
+
+  <!-- Floating social media start -->
+  <div class="social-icons">
+    <div class="floating_btn">
+      <!-- Whatsapp button -->
+      <a target="_blank" href="https://wa.me/9922555920">
+        <div class="contact_icon">
+          <i class="fa fa-whatsapp my-float"></i>
+        </div>
+      </a>
+      <!-- Phone button -->
+      <a href="tel:7030671671" class="floating-phone">
+        <i class="fa fa-phone"></i>
+      </a>
+    </div>
+  </div>
+  <!-- Floating social media end  -->
+
+  
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square back-to-top"
+      ><i class="fa fa-arrow-up"></i
+    ></a>
+
+
+<!-- JavaScript Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+</body>
+</html>
